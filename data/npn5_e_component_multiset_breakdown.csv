@@ -1,0 +1,10 @@
+e_component_multiset,object_count,rate_among_616126_classes,rate_among_E_present_classes,is_multi_e,notes
+E6,3497,0.005675787095496701,0.4403727490240524,false,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E7,2754,0.004469864930225311,0.3468077068379297,false,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E8,1552,0.0025189652765830366,0.1954413801788188,false,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E6 + E6,79,0.00012822052632091487,0.009948369223019771,true,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E6 + E7,31,5.031438374618179e-05,0.0039037904546026948,true,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E7 + E7,13,2.1099580280656878e-05,0.0016370734164462915,true,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E6 + E8,10,1.623044636973606e-05,0.001259287243420224,true,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E7 + E8,3,4.869133910920818e-06,0.00037778617302606723,true,exact E-component multiset extracted from the full component signature; multiplicity is preserved
+E8 + E8,2,3.246089273947212e-06,0.0002518574486840448,true,exact E-component multiset extracted from the full component signature; multiplicity is preserved

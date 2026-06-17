@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1010" height="360" viewBox="0 0 1010 360">
+<rect width="1010" height="360" fill="#ffffff"/>
+<text x="505" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#243040">F169 on-set induced support graph in Q5</text>
+<text x="505" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">component signature: A2 + E6 + E6</text>
+<text x="133" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#243040">A2_1 (A2)</text>
+<line x1="90" y1="220" x2="176" y2="220" stroke="#2B6CB0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="90" cy="220" r="18" fill="#ffffff" stroke="#2B6CB0" stroke-width="3"/>
+<text x="90" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">20</text>
+<text x="90" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">10100</text>
+<circle cx="176" cy="220" r="18" fill="#ffffff" stroke="#2B6CB0" stroke-width="3"/>
+<text x="176" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">28</text>
+<text x="176" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">11100</text>
+<text x="465" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#243040">E6_1 (E6)</text>
+<line x1="325" y1="230" x2="395" y2="230" stroke="#2F855A" stroke-width="3" stroke-linecap="round"/>
+<line x1="395" y1="230" x2="465" y2="230" stroke="#2F855A" stroke-width="3" stroke-linecap="round"/>
+<line x1="465" y1="230" x2="535" y2="230" stroke="#2F855A" stroke-width="3" stroke-linecap="round"/>
+<line x1="465" y1="230" x2="465" y2="158" stroke="#2F855A" stroke-width="3" stroke-linecap="round"/>
+<line x1="535" y1="230" x2="605" y2="230" stroke="#2F855A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="325" cy="230" r="18" fill="#ffffff" stroke="#2F855A" stroke-width="3"/>
+<text x="325" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">0</text>
+<text x="325" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">00000</text>
+<circle cx="395" cy="230" r="18" fill="#ffffff" stroke="#2F855A" stroke-width="3"/>
+<text x="395" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">1</text>
+<text x="395" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">00001</text>
+<circle cx="465" cy="230" r="18" fill="#ffffff" stroke="#2F855A" stroke-width="3"/>
+<text x="465" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">17</text>
+<text x="465" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">10001</text>
+<circle cx="535" cy="230" r="18" fill="#ffffff" stroke="#2F855A" stroke-width="3"/>
+<text x="535" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">19</text>
+<text x="535" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">10011</text>
+<circle cx="605" cy="230" r="18" fill="#ffffff" stroke="#2F855A" stroke-width="3"/>
+<text x="605" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">23</text>
+<text x="605" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">10111</text>
+<circle cx="465" cy="158" r="18" fill="#ffffff" stroke="#2F855A" stroke-width="3"/>
+<text x="465" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">25</text>
+<text x="465" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">11001</text>
+<text x="810" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#243040">E6_2 (E6)</text>
+<line x1="810" y1="158" x2="810" y2="230" stroke="#B7791F" stroke-width="3" stroke-linecap="round"/>
+<line x1="880" y1="230" x2="810" y2="230" stroke="#B7791F" stroke-width="3" stroke-linecap="round"/>
+<line x1="880" y1="230" x2="950" y2="230" stroke="#B7791F" stroke-width="3" stroke-linecap="round"/>
+<line x1="670" y1="230" x2="740" y2="230" stroke="#B7791F" stroke-width="3" stroke-linecap="round"/>
+<line x1="810" y1="230" x2="740" y2="230" stroke="#B7791F" stroke-width="3" stroke-linecap="round"/>
+<circle cx="810" cy="158" r="18" fill="#ffffff" stroke="#B7791F" stroke-width="3"/>
+<text x="810" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">6</text>
+<text x="810" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">00110</text>
+<circle cx="880" cy="230" r="18" fill="#ffffff" stroke="#B7791F" stroke-width="3"/>
+<text x="880" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">10</text>
+<text x="880" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">01010</text>
+<circle cx="670" cy="230" r="18" fill="#ffffff" stroke="#B7791F" stroke-width="3"/>
+<text x="670" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">13</text>
+<text x="670" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">01101</text>
+<circle cx="810" cy="230" r="18" fill="#ffffff" stroke="#B7791F" stroke-width="3"/>
+<text x="810" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">14</text>
+<text x="810" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">01110</text>
+<circle cx="740" cy="230" r="18" fill="#ffffff" stroke="#B7791F" stroke-width="3"/>
+<text x="740" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">15</text>
+<text x="740" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">01111</text>
+<circle cx="950" cy="230" r="18" fill="#ffffff" stroke="#B7791F" stroke-width="3"/>
+<text x="950" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#243040">26</text>
+<text x="950" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#243040">11010</text>
+<text x="505" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#243040">Node labels are cube vertices; small labels show 5-bit cube coordinates.</text>
+</svg>

@@ -1,0 +1,6 @@
+n,universe,total_objects,no_dynkin_count,no_dynkin_rate,has_dynkin_count,has_dynkin_rate,has_A_count,has_D_count,has_E_count,has_E6_count,has_E7_count,has_E8_count,non_dynkin_tree_count,cycle_component_count,other_component_count,notes
+1,all_truth_tables,4,1,0.25,3,0.75,3,0,0,0,0,0,0,0,0,"on-set support signatures; n<=4 all truth tables, n=5 full NPN canonical representatives"
+2,all_truth_tables,16,2,0.125,14,0.875,14,0,0,0,0,0,0,1,0,"on-set support signatures; n<=4 all truth tables, n=5 full NPN canonical representatives"
+3,all_truth_tables,256,68,0.265625,188,0.734375,180,16,0,0,0,0,0,10,57,"on-set support signatures; n<=4 all truth tables, n=5 full NPN canonical representatives"
+4,all_truth_tables,65536,32114,0.490020751953125,33422,0.509979248046875,30478,6144,1920,768,768,384,2104,716,39805,"on-set support signatures; n<=4 all truth tables, n=5 full NPN canonical representatives"
+5,full_npn_classes_canonical_on_signature,616126,242634,0.39380581244745394,373492,0.6061941875525461,365493,29968,7941,3617,2801,1567,52797,2716,520894,"on-set support signatures; n<=4 all truth tables, n=5 full NPN canonical representatives"

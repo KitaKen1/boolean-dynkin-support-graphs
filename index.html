@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boolean support graphs classified by A/D/E Dynkin shapes</title>
+  <meta name="description" content="An exploratory survey of A/D/E-shaped connected components in Boolean on-set support graphs for small Boolean functions, with F169 as a case study.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17201c;
+      --muted: #5e6a64;
+      --line: #d9ded8;
+      --paper: #f7f8f4;
+      --panel: #ffffff;
+      --green: #315f4d;
+      --blue: #355f86;
+      --red: #8e3f35;
+      --gold: #8b6b24;
+      --soft-green: #e6efe8;
+      --soft-blue: #e7eef5;
+      --soft-red: #f5e9e6;
+      --soft-gold: #f3edd9;
+      --shadow: 0 18px 48px rgba(23, 32, 28, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      align-items: center;
+      padding: 44px 0 26px;
+    }
+
+    .hero-grid {
+      max-width: 980px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.76);
+      color: var(--green);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 22px 0 18px;
+      font-size: clamp(2.1rem, 5.4vw, 4.35rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero .wide-panel {
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 9px 13px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(23, 32, 28, 0.04);
+    }
+
+    .button.primary {
+      background: var(--green);
+      border-color: var(--green);
+      color: white;
+    }
+
+    .caption {
+      padding: 11px 13px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    section {
+      padding: 58px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(280px, 0.52fr);
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+
+    .section-head p,
+    .note {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .funnel {
+      display: grid;
+      gap: 10px;
+      padding: 0 18px 20px;
+    }
+
+    .funnel-step {
+      width: var(--w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      padding: 13px 15px;
+    }
+
+    .funnel-step b {
+      display: block;
+      line-height: 1.15;
+    }
+
+    .funnel-step span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .funnel-step strong {
+      color: var(--green);
+      font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+      white-space: nowrap;
+    }
+
+    .funnel-step strong.hot {
+      color: var(--red);
+    }
+
+    .view-pair {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      padding: 0 18px 18px;
+    }
+
+    .view-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      padding: 16px;
+    }
+
+    .view-card b {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+    }
+
+    .view-card strong {
+      display: block;
+      margin-top: 8px;
+      font-size: clamp(1.3rem, 2.8vw, 2rem);
+      line-height: 1.08;
+      color: var(--ink);
+    }
+
+    .view-card strong.hot {
+      color: var(--red);
+    }
+
+    .view-card span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 12px 36px rgba(23, 32, 28, 0.05);
+    }
+
+    .panel-body {
+      padding: 18px;
+    }
+
+    .panel h3,
+    .claim h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+      line-height: 1.25;
+    }
+
+    .panel p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .panel img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: white;
+      border-top: 1px solid var(--line);
+    }
+
+    .panel.emphasis {
+      background: var(--soft-gold);
+      border-color: #e4d6a7;
+      box-shadow: var(--shadow);
+    }
+
+    .panel.emphasis h3 {
+      color: var(--red);
+      font-size: clamp(1.35rem, 2.6vw, 2.1rem);
+    }
+
+    .panel.emphasis p {
+      color: var(--ink);
+      font-size: clamp(1.04rem, 1.7vw, 1.2rem);
+      font-weight: 700;
+    }
+
+    .wide-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .section-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .figure-scroll {
+      width: 100%;
+      overflow-x: auto;
+      background: white;
+    }
+
+    .figure-scroll img {
+      display: block;
+      width: 100%;
+      min-width: 920px;
+      height: auto;
+    }
+
+    .bucket {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .code-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95rem;
+    }
+
+    .code-row.highlight {
+      background: var(--soft-gold);
+      border-color: #e4d6a7;
+      box-shadow: 0 10px 24px rgba(139, 107, 36, 0.12);
+    }
+
+    .tag {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--green);
+      background: var(--soft-green);
+      white-space: nowrap;
+    }
+
+    footer {
+      padding: 34px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        min-height: auto;
+      }
+
+      .section-head,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (max-width: 620px) {
+      .shell {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      h1 {
+        font-size: clamp(1.9rem, 11vw, 3.35rem);
+      }
+
+      .code-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .funnel-step {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <h1>Boolean support graphs classified by A/D/E Dynkin shapes</h1>
+          <div class="wide-panel">
+            <div class="figure-scroll">
+              <img src="figures/boolean_to_support_dynkin_pipeline.svg" alt="Pipeline from Boolean function to on-set support graph to Dynkin-like component signature">
+            </div>
+            <div class="caption">Example: 3-bit Boolean rows become vertices of Q3; on-set vertices inherit Hamming-distance-1 edges.</div>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#survey-counts">Survey counts</a>
+            <a class="button" href="#interesting-finding">F169 case study</a>
+            <a class="button" href="README.md">README</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="survey-counts">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Survey counts: A/D/E-shaped components by input size</h2>
+        </div>
+        <div class="section-stack">
+          <article class="panel">
+            <img src="figures/dynkin_type_presence_matrix_1_to_5.svg" alt="Matrix of Dynkin type counts and rates for n=1 through n=5">
+          </article>
+          <div class="wide-panel" id="diagram-shapes">
+            <div class="figure-scroll">
+              <img src="figures/dynkin_diagram_shapes_ADE.svg" alt="A, D, and E Dynkin diagram shape legend">
+            </div>
+            <div class="caption">The A/D/E shapes checked by the classifier.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interesting-finding">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Case study: F169 in the A/D/E support-graph classification</h2>
+        </div>
+        <div class="section-stack">
+          <article class="panel">
+            <div class="panel-body">
+              <h3>Observation: F169 is a known EDA benchmark that falls into a rare support-graph bucket</h3>
+              <p>F169's on-set support graph has exact signature A2 + E6 + E6.</p>
+              <p>The overlap is the reason for the case study: an EDA-important benchmark also lands in an unusual A/D/E support-graph shape. That coincidence may be worth investigating further, without treating it as a cost explanation.</p>
+            </div>
+            <div class="view-pair">
+              <div class="view-card">
+                <b>EDA view</b>
+                <strong>F169 is a cost-heavy 5-input benchmark. (known) <a href="https://www.spec.org/cpu2026/docs/benchmarks/729.abc_r/729.abc_r.html">[Reference 1]</a></strong>
+              </div>
+              <div class="view-card">
+                <b>Support-graph view</b>
+                <strong class="hot">The exact A2 + E6 + E6 bucket is 3 / 616,126, about 0.00049%. (new observation)</strong>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-body">
+              <h3>F169 support graph</h3>
+              <p>F169 / 0x169AE443 is one example that reaches the A2 + E6 + E6 pattern under this filtering. The README appendix lists the exact vertices and inherited Q5 edges.</p>
+            </div>
+            <img src="figures/f169_support_graph.svg" alt="F169 on-set support graph">
+          </article>
+          <article class="panel">
+            <div class="panel-body">
+              <h3>How filtered is F169 by the A/D/E support-graph classification?</h3>
+            </div>
+            <div class="funnel" aria-label="F169 Dynkin-view filtering funnel">
+              <div class="funnel-step" style="--w: 100%;">
+                <div>
+                  <b>Has Dynkin</b>
+                  <span>373,492 / 616,126</span>
+                </div>
+                <strong>60.62%</strong>
+              </div>
+              <div class="funnel-step" style="--w: 78%;">
+                <div>
+                  <b>Has E</b>
+                  <span>7,941 / 616,126</span>
+                </div>
+                <strong>1.29%</strong>
+              </div>
+              <div class="funnel-step" style="--w: 58%;">
+                <div>
+                  <b>Has multi-E</b>
+                  <span>138 / 616,126</span>
+                </div>
+                <strong>0.022%</strong>
+              </div>
+              <div class="funnel-step" style="--w: 44%;">
+                <div>
+                  <b>Has E6 + E6</b>
+                  <span>79 / 616,126</span>
+                </div>
+                <strong>0.0128%</strong>
+              </div>
+              <div class="funnel-step" style="--w: 30%;">
+                <div>
+                  <b>Has E6 + E6 and A2</b>
+                  <span>6 / 616,126; 6 / 79 inside E6 + E6</span>
+                </div>
+                <strong>0.00097%</strong>
+              </div>
+              <div class="funnel-step" style="--w: 22%;">
+                <div>
+                  <b>Exact A2 + E6 + E6</b>
+                  <span>3 / 616,126</span>
+                </div>
+                <strong class="hot">0.00049%</strong>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-body">
+              <h3>A2 + E6 + E6 examples</h3>
+              <p>The exact A2 + E6 + E6 signature has three representatives in this scan.</p>
+            </div>
+            <div class="bucket">
+              <div class="code-row"><span>0x013D3EC2</span><span class="tag">example</span></div>
+              <div class="code-row"><span>0x035ABC83</span><span class="tag">example</span></div>
+              <div class="code-row highlight"><span>0x169AE443</span><span class="tag">F169</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="shell">
+      Data and notes: <a href="README.md">README</a>.
+    </div>
+  </footer>
+</body>
+</html>

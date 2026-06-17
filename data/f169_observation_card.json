@@ -1,0 +1,46 @@
+{
+  "ambient_cube": "Q5",
+  "ambient_vertices": 32,
+  "checked": [
+    "truth table, input count, ambient cube, on-set size, edge count, and component signature computed by exp/reproduce.py",
+    "random 14-subset baseline fields loaded from exp/outputs",
+    "F169 NPN orbit unique-table and stabilizer fields loaded from exp/outputs",
+    "compact NPN5 support-signature aggregates retained; A2 + E6 + E6 has count 3"
+  ],
+  "component_signature": "A2 + E6 + E6",
+  "component_sizes": [
+    2,
+    6,
+    6
+  ],
+  "full_npn5_f169_signature_count": 3,
+  "full_npn5_f169_signature_examples": [
+    "0x013D3EC2",
+    "0x035ABC83",
+    "0x169AE443"
+  ],
+  "full_npn5_signature_scan_total_classes": 616126,
+  "n_inputs": 5,
+  "needs_review": [],
+  "not_claimed": [
+    "not claimed: Mathieu moonshine",
+    "not claimed: E6 explanation of exact synthesis hardness",
+    "not claimed: certified F169 exact-cost theorem",
+    "not claimed: uniqueness among all 616126 5-input NPN classes"
+  ],
+  "npn_orbit_unique_tables": 1920,
+  "npn_stabilizer_size": 4,
+  "on_set_edge_count": 11,
+  "on_set_size": 14,
+  "random_14_subset_baseline_samples": 100000,
+  "random_14_subset_target_hits": 0,
+  "source_note": {
+    "full_npn5_signature_scan": "compact counts retained in data/dynkin_presence_by_n_1_to_5.csv and data/npn5_e_component_multiset_breakdown.csv",
+    "npn_orbit": "exp/outputs/npn_orbit_f169_summary.json",
+    "random_baseline": "exp/outputs/random_14_subset_baseline.json",
+    "support_graph": "computed by exp/reproduce.py using LSB-first on-set convention",
+    "support_graph_isomorphism": "exp/outputs/e6_a2_isomorphism_lsb_on.json",
+    "truth_table_bit_order": "cube vertex i reads bit i of 0x169AE443 in the LSB-first convention"
+  },
+  "truth_table": "0x169AE443"
+}

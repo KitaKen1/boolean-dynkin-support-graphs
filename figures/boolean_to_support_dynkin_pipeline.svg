@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="360" viewBox="0 0 1180 360" role="img" aria-labelledby="title desc">
+<title id="title">Boolean strings become vertices of Q3</title>
+<desc id="desc">A three-input Boolean function is shown as truth-table rows, vertices of Q3, an induced on-set support graph, and a simple A-type shape label.</desc>
+<rect x="0.0" y="0.0" width="1180.0" height="360.0" rx="0.0" fill="#ffffff" stroke="#ffffff"/>
+<text x="34.0" y="42.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#17201c">Boolean strings become vertices of Q3</text>
+<text x="46.0" y="82.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#17201c">Boolean function</text>
+<text x="46.0" y="105.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5e6a64">3-input example</text>
+<rect x="46.0" y="130.0" width="180.0" height="214.0" rx="7.0" fill="#ffffff" stroke="#e1e5df"/>
+<text x="64.0" y="154.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#5e6a64">x</text>
+<text x="164.0" y="154.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#5e6a64">f(x)</text>
+<text x="64.0" y="180.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">000</text>
+<text x="178.0" y="180.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#8a938e">0</text>
+<rect x="56.0" y="185.0" width="160.0" height="18.0" rx="4.0" fill="#e6efe8" stroke="#e6efe8"/>
+<text x="64.0" y="200.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">001</text>
+<text x="178.0" y="200.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">1</text>
+<rect x="56.0" y="205.0" width="160.0" height="18.0" rx="4.0" fill="#e6efe8" stroke="#e6efe8"/>
+<text x="64.0" y="220.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">010</text>
+<text x="178.0" y="220.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">1</text>
+<text x="64.0" y="240.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">011</text>
+<text x="178.0" y="240.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#8a938e">0</text>
+<rect x="56.0" y="245.0" width="160.0" height="18.0" rx="4.0" fill="#e6efe8" stroke="#e6efe8"/>
+<text x="64.0" y="260.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">100</text>
+<text x="178.0" y="260.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">1</text>
+<rect x="56.0" y="265.0" width="160.0" height="18.0" rx="4.0" fill="#e6efe8" stroke="#e6efe8"/>
+<text x="64.0" y="280.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">101</text>
+<text x="178.0" y="280.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">1</text>
+<rect x="56.0" y="285.0" width="160.0" height="18.0" rx="4.0" fill="#e6efe8" stroke="#e6efe8"/>
+<text x="64.0" y="300.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">110</text>
+<text x="178.0" y="300.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">1</text>
+<text x="64.0" y="320.0" text-anchor="start" font-family="Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#17201c">111</text>
+<text x="178.0" y="320.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#8a938e">0</text>
+<text x="64.0" y="328.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">on-set = rows with 1</text>
+<line x1="250.0" y1="214.0" x2="320.0" y2="214.0" stroke="#b8c0bb" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 320.0 214.0 l -9 -6 v 12 z" fill="#b8c0bb"/>
+<text x="285.0" y="202.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#5e6a64">vertices</text>
+<text x="350.0" y="82.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#17201c">Boolean cube Q3</text>
+<text x="350.0" y="105.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#5e6a64">each 3-bit string is a vertex</text>
+<line x1="378.0" y1="194.0" x2="430.0" y2="164.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="378.0" y1="194.0" x2="378.0" y2="282.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="378.0" y1="194.0" x2="484.0" y2="194.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="430.0" y1="164.0" x2="430.0" y2="252.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="430.0" y1="164.0" x2="536.0" y2="164.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="378.0" y1="282.0" x2="430.0" y2="252.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="378.0" y1="282.0" x2="484.0" y2="282.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="430.0" y1="252.0" x2="536.0" y2="252.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="484.0" y1="194.0" x2="536.0" y2="164.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="484.0" y1="194.0" x2="484.0" y2="282.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="536.0" y1="164.0" x2="536.0" y2="252.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="484.0" y1="282.0" x2="536.0" y2="252.0" stroke="#d7ded8" stroke-width="1.4" stroke-linecap="round"/>
+<circle cx="378.0" cy="194.0" r="8.2" fill="#ffffff" stroke="#aeb7b2" stroke-width="2.0"/>
+<text x="378.0" y="179.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">000</text>
+<circle cx="430.0" cy="164.0" r="8.2" fill="#315f4d" stroke="#315f4d" stroke-width="2.0"/>
+<text x="430.0" y="149.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">001</text>
+<circle cx="378.0" cy="282.0" r="8.2" fill="#315f4d" stroke="#315f4d" stroke-width="2.0"/>
+<text x="378.0" y="267.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">010</text>
+<circle cx="430.0" cy="252.0" r="8.2" fill="#ffffff" stroke="#aeb7b2" stroke-width="2.0"/>
+<text x="430.0" y="237.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">011</text>
+<circle cx="484.0" cy="194.0" r="8.2" fill="#315f4d" stroke="#315f4d" stroke-width="2.0"/>
+<text x="484.0" y="179.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">100</text>
+<circle cx="536.0" cy="164.0" r="8.2" fill="#315f4d" stroke="#315f4d" stroke-width="2.0"/>
+<text x="536.0" y="149.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">101</text>
+<circle cx="484.0" cy="282.0" r="8.2" fill="#315f4d" stroke="#315f4d" stroke-width="2.0"/>
+<text x="484.0" y="267.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">110</text>
+<circle cx="536.0" cy="252.0" r="8.2" fill="#ffffff" stroke="#aeb7b2" stroke-width="2.0"/>
+<text x="536.0" y="237.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">111</text>
+<text x="378.0" y="328.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#315f4d">green = on-set vertices and inherited edges</text>
+<line x1="610.0" y1="214.0" x2="680.0" y2="214.0" stroke="#b8c0bb" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 680.0 214.0 l -9 -6 v 12 z" fill="#b8c0bb"/>
+<text x="645.0" y="202.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#5e6a64">induce</text>
+<text x="710.0" y="82.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#17201c">Support graph</text>
+<text x="710.0" y="105.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#5e6a64">induced graph on the on-set</text>
+<line x1="748.0" y1="204.0" x2="800.0" y2="204.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="800.0" y1="204.0" x2="852.0" y2="204.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="852.0" y1="204.0" x2="852.0" y2="272.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="852.0" y1="272.0" x2="800.0" y2="272.0" stroke="#315f4d" stroke-width="3.0" stroke-linecap="round"/>
+<circle cx="748.0" cy="204.0" r="8.3" fill="#ffffff" stroke="#315f4d" stroke-width="2.3"/>
+<text x="748.0" y="189.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">001</text>
+<circle cx="800.0" cy="204.0" r="8.3" fill="#ffffff" stroke="#315f4d" stroke-width="2.3"/>
+<text x="800.0" y="189.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">101</text>
+<circle cx="852.0" cy="204.0" r="8.3" fill="#ffffff" stroke="#315f4d" stroke-width="2.3"/>
+<text x="852.0" y="189.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">100</text>
+<circle cx="852.0" cy="272.0" r="8.3" fill="#ffffff" stroke="#315f4d" stroke-width="2.3"/>
+<text x="852.0" y="257.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">110</text>
+<circle cx="800.0" cy="272.0" r="8.3" fill="#ffffff" stroke="#315f4d" stroke-width="2.3"/>
+<text x="800.0" y="257.0" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#5e6a64">010</text>
+<text x="800.0" y="326.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#5e6a64">one connected component</text>
+<line x1="880.0" y1="214.0" x2="950.0" y2="214.0" stroke="#b8c0bb" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M 950.0 214.0 l -9 -6 v 12 z" fill="#b8c0bb"/>
+<text x="915.0" y="202.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#5e6a64">read</text>
+<text x="970.0" y="82.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#17201c">Dynkin diagram match</text>
+<text x="970.0" y="105.0" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#5e6a64">same graph shape</text>
+<line x1="994.0" y1="230.0" x2="1028.0" y2="230.0" stroke="#8b6b24" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="1028.0" y1="230.0" x2="1062.0" y2="230.0" stroke="#8b6b24" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="1062.0" y1="230.0" x2="1096.0" y2="230.0" stroke="#8b6b24" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="1096.0" y1="230.0" x2="1130.0" y2="230.0" stroke="#8b6b24" stroke-width="3.0" stroke-linecap="round"/>
+<circle cx="994.0" cy="230.0" r="8.0" fill="#ffffff" stroke="#8b6b24" stroke-width="2.4"/>
+<circle cx="1028.0" cy="230.0" r="8.0" fill="#ffffff" stroke="#8b6b24" stroke-width="2.4"/>
+<circle cx="1062.0" cy="230.0" r="8.0" fill="#ffffff" stroke="#8b6b24" stroke-width="2.4"/>
+<circle cx="1096.0" cy="230.0" r="8.0" fill="#ffffff" stroke="#8b6b24" stroke-width="2.4"/>
+<circle cx="1130.0" cy="230.0" r="8.0" fill="#ffffff" stroke="#8b6b24" stroke-width="2.4"/>
+<rect x="972.0" y="276.0" width="198.0" height="44.0" rx="999.0" fill="#f3edd9" stroke="#d3bd77"/>
+<text x="1071.0" y="304.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#8b6b24">A5 Dynkin diagram</text>
+<text x="1071.0" y="336.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#5e6a64">component shape = A-type path</text>
+</svg>
