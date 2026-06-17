@@ -7,7 +7,8 @@ cube, keep the vertices where the function outputs `1`, and connect neighboring
 vertices. The resulting support graph can contain connected pieces shaped like
 simple `A/D/E` Dynkin diagrams.
 
-The graphical page is [`index.html`](index.html).
+Graphical summary:
+[`kitaken1.github.io/boolean-dynkin-support-graphs`](https://kitaken1.github.io/boolean-dynkin-support-graphs/)
 
 This repository has two main outputs:
 
